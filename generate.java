@@ -2,6 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.util.Random;
+import java.io.*;
 public class generate extends JPanel implements ActionListener,MouseListener{
     private Font font=new Font("Arial", Font.BOLD, 20);
     int x=500,y=300,a=100;
@@ -9,7 +10,7 @@ public class generate extends JPanel implements ActionListener,MouseListener{
     Random random = new Random();
     Timer tx;
     public generate(int b){
-        tx=new Timer(800,this);  
+        tx=new Timer(600,this);  
         addMouseListener(this);
         best=b;
     }

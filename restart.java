@@ -18,6 +18,9 @@ public class restart extends JFrame implements ActionListener{
                 best=last;
                 bw.write("best,"+best);
             }
+            else{        /// Fix the buffer
+                bw.write("best,"+best);
+            }
             bw.close();fw.close();
         }catch(Exception e){}
 

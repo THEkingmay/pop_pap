@@ -20,7 +20,7 @@ public class login extends JFrame implements ActionListener{
          while((a=br.readLine())!=null){
             s=a.split(",");
          }
-         JLabel bscore = new JLabel("Your best score is : "+s[1]);
+         JLabel bscore = new JLabel("Your best score : "+s[1]);
          bscore.setBounds(120, 50, 500, 300);
          bscore.setFont(font);
          cp.add(bscore);
